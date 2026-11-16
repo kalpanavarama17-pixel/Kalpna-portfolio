@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ===== SEO ===== -->
+  <title>Kalpana Verma | Software Application Trainee &amp; Aspiring Software Developer</title>
+  <meta name="description" content="Portfolio of Kalpana Verma, a Computer Software Application trainee and aspiring software developer skilled in Python, HTML, CSS, JavaScript and MySQL, building the AI Smart Office Assistant." />
+  <meta name="author" content="Kalpana Verma" />
+  <meta name="theme-color" content="#0a0e1a" />
+  <!-- TODO: after publishing, replace with your real GitHub Pages URL -->
+  <!-- <link rel="canonical" href="https://YOUR-USERNAME.github.io/REPO-NAME/" /> -->
+
+  <!-- Open Graph (link previews on LinkedIn / WhatsApp) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kalpana Verma | Aspiring Software Developer" />
+  <meta property="og:description" content="Python, JavaScript, MySQL and AI-driven projects. View my portfolio." />
+  <meta property="og:image" content="assets/images/kalpana-profile.jpg" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+
+  <!-- Fonts: Inter (body) + Space Grotesk (headings) + JetBrains Mono (code accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Marks JS as available so scroll-reveal animations only hide content when they can run -->
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Decorative animated background -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Kalpana Verma, home">
+        <span class="logo-mark">KV</span>
+        <span class="logo-text">Kalpana<span class="dot">.</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="pulse"></span> Open to internships &amp; entry-level roles</p>
+          <h1>
+            Hi, I'm <span class="gradient-text">Kalpana Verma</span>
+          </h1>
+          <p class="hero-role">
+            <span class="mono">&gt;</span>
+            <span id="typewriter" aria-live="off">Aspiring Software Developer</span><span class="cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero-headline">I turn everyday office problems into smart, simple software.</p>
+          <p class="hero-desc">
+            Computer Software Application trainee with hands-on skills in Python, JavaScript, HTML, CSS and
+            MySQL, currently building an AI-powered office assistant and growing every day as a developer.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> View My Projects</a>
+            <a href="assets/resume/Kalpana_Verma_Resume.pdf" class="btn btn-ghost" download="Kalpana_Verma_Resume.pdf">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
+
+          <div class="socials" aria-label="Social links">
+            <!-- URLs are set in script.js (SITE_CONFIG). Until then, they show a helpful notice. -->
+            <a href="#" class="social" data-link="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social" data-link="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:kalpnavarma10072006@gmail.com" class="social" aria-label="Send email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="photo-wrap">
+            <div class="photo-ring" aria-hidden="true"></div>
+            <picture>
+              <source srcset="assets/images/kalpana-profile.webp" type="image/webp" />
+              <img src="assets/images/kalpana-profile.jpg" width="640" height="800" alt="Portrait of Kalpana Verma in a black blazer" class="photo" fetchpriority="high" />
+            </picture>
+
+            <div class="float-card fc-1" aria-hidden="true"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="float-card fc-2" aria-hidden="true"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="float-card fc-3" aria-hidden="true"><i class="fa-solid fa-robot"></i> AI</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-tag mono">01 / about</p>
+          <h2>About <span class="gradient-text">Me</span></h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a Computer Software Application trainee who loves turning ideas into working software.
+              My journey began with the fundamentals of computers, office tools and accounting software, and
+              grew into programming and web development with Python, JavaScript, HTML, CSS and MySQL.
+            </p>
+            <p>
+              I'm especially interested in <strong>software development and Artificial Intelligence</strong>.
+              My flagship project, the <em>AI Smart Office Assistant</em>, combines both: it aims to make
+              everyday office work like documents, resumes, spreadsheets and reminders faster and easier.
+            </p>
+            <p>
+              Because I understand how offices really work, from Excel and Tally to Photoshop and CorelDRAW, I like
+              building tools that real people can use on day one.
+            </p>
+
+            <div class="goal-box glass">
+              <h3><i class="fa-solid fa-bullseye"></i> Career Goal</h3>
+              <p>
+                To grow into a skilled software developer who builds reliable, user-friendly and AI-powered
+                applications, starting with an internship or entry-level role where I can learn from
+                a great team and contribute from day one.
+              </p>
+            </div>
+          </div>
+
+          <aside class="about-side reveal">
+            <div class="glass info-card">
+              <h3>Quick facts</h3>
+              <ul class="facts">
+                <li><i class="fa-solid fa-graduation-cap"></i><div><span>Training</span>NSTI, Computer Software Application Trade</div></li>
+                <li><i class="fa-solid fa-certificate"></i><div><span>Qualifications</span>ADCA &amp; COPA</div></li>
+                <li><i class="fa-solid fa-code"></i><div><span>Focus</span>Python, Web Development, MySQL</div></li>
+                <li><i class="fa-solid fa-brain"></i><div><span>Interested in</span>Artificial Intelligence</div></li>
+                <li><i class="fa-solid fa-location-dot"></i><div><span>Based in</span>Kanpur, India</div></li>
+              </ul>
+            </div>
+
+            <div class="stats">
+              <div class="stat glass"><strong data-count="11">0</strong><span>Technical skills</span></div>
+              <div class="stat glass"><strong data-count="2">0</strong><span>Qualifications</span></div>
+              <div class="stat glass"><strong data-count="1">0</strong><span>AI certification</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-tag mono">02 / skills</p>
+          <h2>Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-sub">Tools and technologies I work with. The bars show my current comfort level as I keep learning.</p>
+        </header>
+
+        <div class="skills-grid">
+          <!-- Programming -->
+          <article class="skill-card glass reveal">
+            <div class="skill-card-head"><span class="icon-box"><i class="fa-solid fa-terminal"></i></span><h3>Programming</h3></div>
+            <ul class="skill-list">
+              <li><div class="skill-row"><span><i class="fa-brands fa-python"></i> Python</span><em>Intermediate</em></div><div class="bar" role="progressbar" aria-label="Python" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span data-level="70"></span></div></li>
+              <li><div class="skill-row"><span><i class="fa-brands fa-js"></i> JavaScript</span><em>Intermediate</em></div><div class="bar" role="progressbar" aria-label="JavaScript" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span data-level="65"></span></div></li>
+            </ul>
+          </article>
+
+          <!-- Web Development -->
+          <article class="skill-card glass reveal">
+            <div class="skill-card-head"><span class="icon-box"><i class="fa-solid fa-globe"></i></span><h3>Web Development</h3></div>
+            <ul class="skill-list">
+              <li><div class="skill-row"><span><i class="fa-brands fa-html5"></i> HTML</span><em>Proficient</em></div><div class="bar" role="progressbar" aria-label="HTML" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span data-level="85"></span></div></li>
+              <li><div class="skill-row"><span><i class="fa-brands fa-css3-alt"></i> CSS</span><em>Proficient</em></div><div class="bar" role="progressbar" aria-label="CSS" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span data-level="80"></span></div></li>
+            </ul>
+          </article>
+
+          <!-- Databases -->
+          <article class="skill-card glass reveal">
+            <div class="skill-card-head"><span class="icon-box"><i class="fa-solid fa-database"></i></span><h3>Databases</h3></div>
+            <ul class="skill-list">
+              <li><div class="skill-row"><span><i class="fa-solid fa-database"></i> MySQL</span><em>Intermediate</em></div><div class="bar" role="progressbar" aria-label="MySQL" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span data-level="65"></span></div></li>
+            </ul>
+            <p class="skill-note">SQL queries, tables and data handling.</p>
+          </article>
+
+          <!-- Office & Accounting -->
+          <article class="skill-card glass reveal">
+            <div class="skill-card-head"><span class="icon-box"><i class="fa-solid fa-briefcase"></i></span><h3>Office &amp; Accounting</h3></div>
+            <ul class="skill-list">
+              <li><div class="skill-row"><span><i class="fa-solid fa-file-word"></i> MS Office</span><em>Proficient</em></div><div class="bar" role="progressbar" aria-label="MS Office" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span data-level="90"></span></div></li>
+              <li><div class="skill-row"><span><i class="fa-solid fa-file-excel"></i> MS Excel</span><em>Proficient</em></div><div class="bar" role="progressbar" aria-label="MS Excel" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span data-level="85"></span></div></li>
+              <li><div class="skill-row"><span><i class="fa-solid fa-table"></i> Google Sheets</span><em>Proficient</em></div><div class="bar" role="progressbar" aria-label="Google Sheets" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span data-level="80"></span></div></li>
+              <li><div class="skill-row"><span><i class="fa-solid fa-calculator"></i> Tally</span><em>Proficient</em></div><div class="bar" role="progressbar" aria-label="Tally" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span data-level="75"></span></div></li>
+            </ul>
+          </article>
+
+          <!-- Design -->
+          <article class="skill-card glass reveal">
+            <div class="skill-card-head"><span class="icon-box"><i class="fa-solid fa-palette"></i></span><h3>Design Tools</h3></div>
+            <ul class="skill-list">
+              <li><div class="skill-row"><span><i class="fa-solid fa-image"></i> Photoshop</span><em>Intermediate</em></div><div class="bar" role="progressbar" aria-label="Photoshop" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span data-level="70"></span></div></li>
+              <li><div class="skill-row"><span><i class="fa-solid fa-pen-nib"></i> CorelDRAW</span><em>Intermediate</em></div><div class="bar" role="progressbar" aria-label="CorelDRAW" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span data-level="70"></span></div></li>
+            </ul>
+          </article>
+
+          <!-- Soft skills -->
+          <article class="skill-card glass reveal">
+            <div class="skill-card-head"><span class="icon-box"><i class="fa-solid fa-handshake"></i></span><h3>Also Skilled In</h3></div>
+            <div class="chips">
+              <span class="chip">Accounting</span>
+              <span class="chip">Balance Sheets</span>
+              <span class="chip">BUSY ERP</span>
+              <span class="chip">Hindi Typing</span>
+              <span class="chip">InDesign</span>
+              <span class="chip">Team Player</span>
+              <span class="chip">Workplace Ethics</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-tag mono">03 / projects</p>
+          <h2>Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-sub">Things I've built while learning, with more on the way.</p>
+        </header>
+
+        <!-- Featured project -->
+        <article class="project-featured glass reveal">
+          <div class="pf-visual" aria-hidden="true">
+            <div class="mock-window">
+              <div class="mock-bar"><i></i><i></i><i></i><span>smart-office-assistant</span></div>
+              <div class="mock-body">
+                <div class="mock-chat">
+                  <p class="m-user">Create a resume for me</p>
+                  <p class="m-ai"><i class="fa-solid fa-robot"></i> Sure! Let's start with your details&hellip;</p>
+                  <p class="m-user">Remind me about the 4 PM meeting</p>
+                  <p class="m-ai"><i class="fa-solid fa-robot"></i> Reminder set.</p>
+                </div>
+                <div class="mock-tiles">
+                  <span><i class="fa-solid fa-file-lines"></i></span>
+                  <span><i class="fa-solid fa-file-excel"></i></span>
+                  <span><i class="fa-solid fa-folder-open"></i></span>
+                  <span><i class="fa-solid fa-bell"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pf-content">
+            <span class="badge"><i class="fa-solid fa-star"></i> Featured Project</span>
+            <h3>AI Smart Office Assistant</h3>
+            <p>
+              A smart office management application designed to simplify everyday office tasks, including
+              document creation, resume generation, Excel assistance, file management, reminders and
+              AI-based assistance.
+            </p>
+
+            <h4>Key features</h4>
+            <ul class="features">
+              <li><i class="fa-solid fa-check"></i> Document creation</li>
+              <li><i class="fa-solid fa-check"></i> Resume generation</li>
+              <li><i class="fa-solid fa-check"></i> Excel assistance</li>
+              <li><i class="fa-solid fa-check"></i> File management</li>
+              <li><i class="fa-solid fa-check"></i> Reminders</li>
+              <li><i class="fa-solid fa-check"></i> AI-based assistance</li>
+            </ul>
+
+            <h4>Technologies used</h4>
+            <div class="chips">
+              <span class="chip chip-accent">Python</span>
+              <span class="chip chip-accent">HTML</span>
+              <span class="chip chip-accent">CSS</span>
+              <span class="chip chip-accent">JavaScript</span>
+              <span class="chip chip-accent">MySQL</span>
+              <span class="chip chip-accent">Artificial Intelligence</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#" class="btn btn-primary btn-sm" data-link="repoSmartOffice" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+              <!-- Live demo button stays hidden until a working demo URL is set in script.js -->
+              <a href="#" class="btn btn-ghost btn-sm" data-link="demoSmartOffice" data-hide-if-empty="true" target="_blank" rel="noopener noreferrer" hidden><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Other projects -->
+        <div class="projects-grid">
+          <article class="project-card glass reveal">
+            <span class="icon-box"><i class="fa-solid fa-file-signature"></i></span>
+            <h3>Application Form</h3>
+            <p>
+              A clean, well-structured application form with personal details, contact information,
+              educational qualifications and document upload fields. It's styled with CSS for clear alignment,
+              spacing and a smooth submission experience.
+            </p>
+            <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span></div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-ghost btn-sm" data-link="repoApplicationForm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </article>
+
+          <!-- Placeholder for future projects. Duplicate this block to add more. -->
+          <article class="project-card project-placeholder reveal">
+            <span class="icon-box"><i class="fa-solid fa-plus"></i></span>
+            <h3>Next Project</h3>
+            <p>A new project is in the works. Check back soon, or follow my GitHub for updates.</p>
+            <div class="chips"><span class="chip">Coming soon</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION & CERTIFICATIONS ================= -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-tag mono">04 / education</p>
+          <h2>Education &amp; <span class="gradient-text">Certifications</span></h2>
+        </header>
+
+        <div class="edu-grid">
+          <!-- Timeline -->
+          <div class="timeline">
+            <div class="tl-item reveal">
+              <span class="tl-dot"></span>
+              <div class="glass tl-card">
+                <span class="tl-date mono">Current</span>
+                <h3>Computer Software Application Trade</h3>
+                <p class="tl-place">NSTI (National Skill Training Institute)</p>
+                <p>Trainee in the Computer Software Application trade, building practical skills in programming and software tools.</p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <span class="tl-dot"></span>
+              <div class="glass tl-card">
+                <span class="tl-date mono">July 2025</span>
+                <h3>Diploma in COPA</h3>
+                <p class="tl-place">Government Industrial Training Institute, Madhogarh, Jalaun</p>
+                <p>Computer Operator and Programming Assistant covering computer fundamentals, office applications and programming basics.</p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <span class="tl-dot"></span>
+              <div class="glass tl-card">
+                <span class="tl-date mono">Jul 2023 – Nov 2024</span>
+                <h3>Computer &amp; Software Training</h3>
+                <p class="tl-place">BIMT, Bright Institute of Management &amp; Technology</p>
+                <p>MS Office, Tally Prime, BUSY ERP 9+, Google Sheets, accounting, CorelDRAW, Photoshop, InDesign, HTML, DHTML, JavaScript and CSS.</p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <span class="tl-dot"></span>
+              <div class="glass tl-card">
+                <span class="tl-date mono">July 2023</span>
+                <h3>12th, UP Board</h3>
+                <p class="tl-place">Mahaveer Inter College, Neemgaon, Jalaun</p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <span class="tl-dot"></span>
+              <div class="glass tl-card">
+                <span class="tl-date mono">July 2021</span>
+                <h3>10th, UP Board</h3>
+                <p class="tl-place">Mahaveer Inter College, Neemgaon, Jalaun</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification cards -->
+          <div class="cert-col">
+            <h3 class="col-title reveal"><i class="fa-solid fa-award"></i> Computer Qualifications</h3>
+
+            <article class="cert-card glass reveal">
+              <span class="icon-box"><i class="fa-solid fa-laptop-code"></i></span>
+              <div>
+                <h4>COPA</h4>
+                <p>Computer Operator &amp; Programming Assistant</p>
+                <!-- TODO: add your COPA certificate to assets/certificates/ and set certCopa in script.js -->
+                <a href="#" class="cert-link" data-link="certCopa" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i> View certificate</a>
+              </div>
+            </article>
+
+            <article class="cert-card glass reveal">
+              <span class="icon-box"><i class="fa-solid fa-desktop"></i></span>
+              <div>
+                <h4>ADCA</h4>
+                <p>Advanced Diploma in Computer Applications</p>
+                <!-- TODO: add your ADCA certificate to assets/certificates/ and set certAdca in script.js -->
+                <a href="#" class="cert-link" data-link="certAdca" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i> View certificate</a>
+              </div>
+            </article>
+
+            <article class="cert-card glass reveal">
+              <span class="icon-box"><i class="fa-solid fa-robot"></i></span>
+              <div>
+                <h4>AI Literacy</h4>
+                <p>IBM SkillsBuild &middot; Issued 05 Nov 2026</p>
+                <a href="assets/certificates/ai-literacy-ibm-skillsbuild.pdf" class="cert-link" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> View certificate</a>
+                <a href="https://www.credly.com/go/Rk7rkw1M" class="cert-link" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-circle-check"></i> Verify on Credly</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-tag mono">05 / achievements</p>
+          <h2>Achievements &amp; <span class="gradient-text">Badges</span></h2>
+        </header>
+
+        <div class="ach-grid">
+          <!-- AI Literacy (real certificate) -->
+          <article class="ach-card glass ach-main reveal">
+            <button type="button" class="cert-preview" data-lightbox="assets/certificates/ai-literacy-preview.jpg" aria-label="Open AI Literacy certificate preview">
+              <img src="assets/certificates/ai-literacy-preview.jpg" width="900" height="696" loading="lazy" alt="IBM SkillsBuild AI Literacy certificate issued to Kalpana Varama" />
+              <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</span>
+            </button>
+            <div class="ach-body">
+              <span class="badge"><i class="fa-solid fa-medal"></i> AI Literacy Badge</span>
+              <h3>AI Literacy, IBM SkillsBuild</h3>
+              <p>Earned the AI Literacy credential from IBM SkillsBuild on 05 November 2026, building a solid foundation in how Artificial Intelligence works and how to use it responsibly.</p>
+              <div class="project-actions">
+                <a href="https://www.credly.com/go/Rk7rkw1M" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-circle-check"></i> Verify on Credly</a>
+                <a href="assets/certificates/ai-literacy-ibm-skillsbuild.pdf" class="btn btn-ghost btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Open PDF</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Placeholder: add future achievements by copying this block -->
+          <article class="ach-card ach-placeholder reveal">
+            <span class="icon-box"><i class="fa-solid fa-trophy"></i></span>
+            <h3>More to come</h3>
+            <p>New certificates, badges and milestones will be added here as I earn them.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-tag mono">06 / contact</p>
+          <h2>Let's <span class="gradient-text">Connect</span></h2>
+          <p class="section-sub">Looking for an intern or junior developer? I'd love to hear from you.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <a class="contact-item glass" href="mailto:kalpnavarma10072006@gmail.com">
+              <span class="icon-box"><i class="fa-solid fa-envelope"></i></span>
+              <div><span>Email</span>kalpnavarma10072006@gmail.com</div>
+            </a>
+            <a class="contact-item glass" href="#" data-link="linkedin" target="_blank" rel="noopener noreferrer">
+              <span class="icon-box"><i class="fa-brands fa-linkedin-in"></i></span>
+              <div><span>LinkedIn</span>Connect with me</div>
+            </a>
+            <a class="contact-item glass" href="#" data-link="github" target="_blank" rel="noopener noreferrer">
+              <span class="icon-box"><i class="fa-brands fa-github"></i></span>
+              <div><span>GitHub</span>See my code</div>
+            </a>
+            <div class="contact-item glass">
+              <span class="icon-box"><i class="fa-solid fa-location-dot"></i></span>
+              <div><span>Location</span>Kanpur, India</div>
+            </div>
+          </div>
+
+          <!--
+            Contact form: works with no backend.
+            By default it opens the visitor's email app with the message pre-filled (mailto).
+            To receive messages directly instead, set formEndpoint in script.js (e.g. a free Formspree URL).
+          -->
+          <form class="contact-form glass reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" required placeholder="e.g. Priya Sharma" />
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="cf-email">Your email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" required placeholder="you@company.com" />
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="cf-subject">Subject</label>
+              <input type="text" id="cf-subject" name="subject" placeholder="Internship opportunity" />
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required placeholder="Tell me a little about the opportunity..."></textarea>
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Kalpana Verma. All rights reserved.</p>
+      <div class="socials" aria-label="Social links">
+        <a href="#" class="social" data-link="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social" data-link="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:kalpnavarma10072006@gmail.com" class="social" aria-label="Send email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Lightbox for certificate preview -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate preview" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview"><i class="fa-solid fa-xmark"></i></button>
+    <img id="lightboxImg" src="" alt="Enlarged AI Literacy certificate" />
+  </div>
+
+  <!-- Toast notifications -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
